@@ -1,0 +1,232 @@
+/* ===== Reset e Configurações Globais ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #071028;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+#contato {
+  padding: 6rem 2rem; /* bastante espaço acima e abaixo */
+  background-color: #161b22; /* cor de fundo sutil, contrastando com a página */
+  border-top: 2px solid #2575fc; /* linha de destaque no topo */
+  border-bottom: 2px solid #2575fc; /* linha de destaque no fundo */
+  text-align: center;
+  border-radius: 15px;
+  margin: 4rem 2rem; /* espaçamento externo */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* dá leve profundidade */
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contato p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.header .slogan {
+  opacity: 0.95;
+}
+
+.header nav {
+  margin-top: 1rem;
+}
+
+.header nav a {
+  color: #fff;
+  margin: 0 0.6rem;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.header nav a:hover {
+  color: #ffb347;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #0b1220;
+}
+
+.product-image img {
+  width: 320px;
+  max-width: 40vw;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-text {
+  max-width: 640px;
+}
+
+.hero-text h2 {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.hero-text p {
+  color: #d0d8e6;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  background: linear-gradient(90deg, #ff6a00, #ffb347);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.25s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Features Section ===== */
+.features {
+  padding: 3rem 2rem;
+  background: #0f1724;
+  text-align: center;
+  color: #fff;
+}
+
+.features h2 {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.feature {
+  background: #111827;
+  padding: 1.6rem;
+  border-radius: 14px;
+  width: 260px;
+  transition: transform 0.25s;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+}
+
+.feature h3 {
+  font-family: Poppins, Arial, sans-serif;
+  margin-bottom: 0.6rem;
+}
+
+/* ===== Product Highlight Section ===== */
+.product-highlight {
+  background-color: #0b0f19;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.highlight-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  animation: float-dance 6s ease-in-out infinite;
+}
+
+.highlight-text {
+  max-width: 500px;
+  flex: 1;
+}
+
+.highlight-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Animação da imagem */
+@keyframes float-dance {
+  0%   { transform: translate(0,0) rotate(0deg) scale(1); }
+  25%  { transform: translate(10px,-10px) rotate(2deg) scale(1.03); }
+  50%  { transform: translate(-10px,10px) rotate(-2deg) scale(1.02); }
+  75%  { transform: translate(5px,-5px) rotate(1deg) scale(1.04); }
+  100% { transform: translate(0,0) rotate(0deg) scale(1); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .highlight-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-image {
+    max-width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .highlight-text {
+    max-width: 100%;
+  }
+}

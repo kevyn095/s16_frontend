@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LumiBand</title>
+  <link rel="stylesheet" href="dist/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #fff;
+      scroll-behavior: smooth; /* Rolagem suave */
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem;
+      background-color: #0b0f19;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      color: #000;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Animação da imagem */
+    .hero img {
+      max-width: 40%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    .features {
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #0b0f19;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LumiBand</h1>
+    <p>O gadget que conecta luz, música e movimento</p>
+    <nav>
+      <a href="#funcionalidades">Recursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  
+  <!-- Seção de Destaque do Produto -->
+<section class="product-highlight" id="destaque">
+  <div class="highlight-container" style="display: flex; align-items: center; gap: 2rem;">
+    <img src="image/baixados (1).webp" alt="LumiBand Produto" class="highlight-image">
+    <div class="highlight-text">
+      <h2>Conheça a TechGadget</h2>
+      <p>O gadget que combina luz, música e movimento em um só acessório incrível.</p>
+      <div style="display: flex; gap: 1rem;">
+        <a href="#contato" class="cta-button">Garanta o Seu</a>
+        <a href="#funcionalidades" class="cta-button">Funcionalidades</a>
+    </div>
+  </div>
+</section>
+  
+  <section id="funcionalidades" class="features">
+    <h2>Funcionalidades</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Controle de Música</h3>
+        <p>Pule, pause e troque músicas com um simples gesto.</p>
+      </div>
+      <div class="card">
+        <h3>Notificações Inteligentes</h3>
+        <p>Receba alertas luminosos de chamadas e mensagens.</p>
+      </div>
+      <div class="card">
+        <h3>Personalização</h3>
+        <p>Escolha entre dezenas de cores e padrões de luz.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contato -->
+  <section id="contato" class="features">
+    <h2>Contato</h2>
+    <p>Quer saber mais? Envie-nos uma mensagem!</p>
+    <p>LumidBand@gmail.com +55 (11) 40028922</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LumiBand. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
