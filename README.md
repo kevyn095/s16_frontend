@@ -1,0 +1,28 @@
+Produto Fictício
+LumiBand é um gadget inovador que combina luz, música e movimento em um único acessório. O conceito da página é apresentar o produto de forma moderna e interativa, destacando suas funcionalidades, benefícios e incentivando o usuário a adquirir ou saber mais. A página foi criada com foco em experiência visual e facilidade de navegação, incluindo seções de destaque, funcionalidades e contato.
+
+Animações
+-CSS:  
+   A imagem do produto possui uma animação de flutuação (`@keyframes float`) que cria um efeito de movimento contínuo e suave, reforçando a ideia de leveza e tecnologia.  
+  -Os botões utilizam `transition` para efeito de scale ao passar o mouse, deixando a interação mais dinâmica.  
+
+-JavaScript / Biblioteca (ex: GSAP) :  
+  - Embora este projeto não tenha animações complexas em JS, bibliotecas como GSAP podem ser usadas quando queremos efeitos dependentes de scroll ou eventos do usuário, como aparecer elementos com delay ou animações mais fluidas e sequenciais.  
+  - A escolha do CSS para animações básicas se justifica pela simplicidade e desempenho, enquanto JS/GSAP é indicado para interatividade avançada.
+
+ Pré-processador CSS
+- Foi utilizado SASS como pré-processador.  
+- Vantagens:
+  - Permite organizar o código em arquivos menores (partials), facilitando manutenção.
+  - Possibilita variáveis e mixins, evitando repetição de cores, fontes e estilos comuns.
+  - Ajuda a manter a consistência visual do projeto e acelera alterações de design.  
+- Ferramentas como SASS são importantes em projetos maiores, pois tornam o CSS mais modular, reutilizável e escalável.
+
+Ferramenta de Build
+- Foi configurado Gulp como ferramenta de build.  
+- Funções automatizadas:
+  - Compilar SASS para CSS.
+  - Minificar arquivos CSS e JS para melhorar performance.
+  - Atualização automática do navegador (Live Reload) durante o desenvolvimento.
+  - Copiar arquivos de imagens e fontes para a pasta `dist`.  
+- A utilização do Gulp otimiza o fluxo de trabalho, reduz erros manuais e garante que o projeto esteja sempre pronto para produção de forma rápida e eficiente.
